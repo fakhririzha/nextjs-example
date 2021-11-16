@@ -8,12 +8,16 @@ const Nav = () => {
 				<ul className="navbar__items">
 					<Link href="/">
 						<li className="navbar__item">
-							<a href="/">Home</a>
+							<Link href="/" passHref>
+								<a>Home</a>
+							</Link>
 						</li>
 					</Link>
-					<Link href="/categories">
+					<Link href="/category/categoryList" as="/category">
 						<li className="navbar__item">
-							<a href="/categories">Categories</a>
+							<Link href="/category/categoryList" as="/category" passHref>
+								<a>Categories</a>
+							</Link>
 						</li>
 					</Link>
 				</ul>

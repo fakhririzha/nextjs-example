@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
 			<main className="home__mainContent">
 				<h1>The Meal DB Homepage</h1>
 			</main>
+			<br />
 			<Component {...pageProps} />
 			<Footer />
 		</>
