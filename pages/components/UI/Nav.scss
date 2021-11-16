@@ -27,11 +27,11 @@
         border-radius: 5px;
         cursor: pointer;
         transition: all 0.4s ease-in-out;
-        text-decoration: underline 2px;
-        text-underline-offset: 5px;
-        transition: all 0.4s ease-in-out;
 
         a {
+            text-decoration: underline 2px;
+            text-underline-offset: 5px;
+            transition: all 0.4s ease-in-out;
         }
     }
     
