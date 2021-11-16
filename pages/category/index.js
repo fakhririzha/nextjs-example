@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+
 import Head from "next/head";
 import Link from "next/link";
+
 import axios from "axios";
 
 import styles from "../../styles/category/categoryList.module.scss";
@@ -15,7 +17,7 @@ export const getServerSideProps = async (ctx) => {
 	return { props: { categories: categories } };
 };
 
-const CategoryList = (props) => {
+const Category = (props) => {
 	const [categories, setCategories] = useState(null);
 
 	useEffect(() => {
@@ -33,15 +35,15 @@ const CategoryList = (props) => {
 				{(categories &&
 					categories.map((category) => {
 						return (
-							<Link
-								href={`/categories/${category.strCategory.toLowerCase()}`}
-								passHref
+							<div
+								className={styles.categories__item}
+								key={category.idCategory}
 							>
-								<a>
-									<div
-										className={styles.categories__item}
-										key={category.idCategory}
-									>
+								<Link
+									href={`/category/${category.strCategory.toLowerCase()}`}
+									passHref
+								>
+									<a>
 										<figure>
 											<img
 												src={category.strCategoryThumb}
@@ -55,9 +57,9 @@ const CategoryList = (props) => {
 												</small>
 											</figcaption>
 										</figure>
-									</div>
-								</a>
-							</Link>
+									</a>
+								</Link>
+							</div>
 						);
 					})) ||
 					"Loading..."}
@@ -66,4 +68,4 @@ const CategoryList = (props) => {
 	);
 };
 
-export default CategoryList;
+export default Category;

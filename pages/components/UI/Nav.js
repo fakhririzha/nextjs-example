@@ -13,9 +13,9 @@ const Nav = () => {
 							</Link>
 						</li>
 					</Link>
-					<Link href="/category/categoryList" as="/category">
+					<Link href="/category/">
 						<li className="navbar__item">
-							<Link href="/category/categoryList" as="/category" passHref>
+							<Link href="/category/" passHref>
 								<a>Categories</a>
 							</Link>
 						</li>

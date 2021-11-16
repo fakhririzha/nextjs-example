@@ -1,0 +1,53 @@
+.meal {
+    margin-bottom: 5rem;
+}
+.meal__item {
+    padding: 2.5%;
+    display: grid;
+    grid-template-columns: 25% 72.5%;
+    grid-template-rows: 2rem 2rem 2rem 17.5rem 25rem;
+    grid-template-areas: 
+        "images names"
+        "images category"
+        "images originCountry"
+        "images instructions"
+        "recipe recipe";
+    column-gap: 2.5%;
+    row-gap: 1rem;
+    background-color: #E9C46A;
+
+    .image {
+        grid-area: images;
+        background-color: #8ca0ff;
+    }
+    
+    .name {
+        grid-area: names;
+        font-size: 1.5rem;
+        font-weight: bold;
+        // background-color: #ffa08c;
+    }
+
+    .category {
+        grid-area: category;
+        background-color: #ffff64;
+    }
+
+    .origin {
+        grid-area: originCountry;
+        background-color: #8cffa0;
+    }
+
+    .instructions {
+        grid-area: instructions;
+        // background-color: #ffff64;
+    }
+
+    .recipe {
+        border-top: 2px solid #fff;
+        margin-top: 2.5rem;
+        grid-area: recipe;
+        // background-color: #ffa08c;
+        text-align: center;
+    }
+}
