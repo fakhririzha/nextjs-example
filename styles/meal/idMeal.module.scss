@@ -5,7 +5,7 @@
     padding: 2.5%;
     display: grid;
     grid-template-columns: 25% 72.5%;
-    grid-template-rows: 2rem 2rem 2rem 17.5rem 25rem;
+    grid-template-rows: 2rem 2rem 2rem 20rem 25rem;
     grid-template-areas: 
         "images names"
         "images category"
@@ -25,22 +25,22 @@
         grid-area: names;
         font-size: 1.5rem;
         font-weight: bold;
-        // background-color: #ffa08c;
     }
-
+    
     .category {
         grid-area: category;
         background-color: #ffff64;
     }
-
+    
     .origin {
         grid-area: originCountry;
         background-color: #8cffa0;
     }
-
+    
     .instructions {
         grid-area: instructions;
-        // background-color: #ffff64;
+        text-align: justify;
+        // background-color: #ffa08c;
     }
 
     .recipe {

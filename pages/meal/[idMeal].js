@@ -69,15 +69,17 @@ const idMeal = (props) => {
 									>
 										Tutorial Video
 									</span>
-									<iframe
-										width="560"
-										height="315"
-										src={item.strYoutube.replace("watch?v=", "embed/")}
-										title="YouTube video player"
-										frameborder="0"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowfullscreen
-									></iframe>
+									{(item.strYoutube && (
+										<iframe
+											width="560"
+											height="315"
+											src={item.strYoutube.replace("watch?v=", "embed/")}
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									)) || <span>No video tutorial found.</span>}
 								</div>
 							</div>
 						);
