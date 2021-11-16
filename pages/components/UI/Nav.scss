@@ -1,0 +1,43 @@
+.navbar__wrapper {
+    margin: 1rem 2.5%;
+}
+
+.navbar__nav {
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+    ul {
+        padding: 0;
+    }
+}
+
+.navbar__items {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    text-align: center;
+}
+
+.navbar__item {
+    list-style-type: none;
+    padding: .75rem .25rem;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background: #13242A;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        text-decoration: underline 2px;
+        text-underline-offset: 5px;
+        transition: all 0.4s ease-in-out;
+
+        a {
+        }
+    }
+    
+    a {
+        color: #E9C46A;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+    }
+}
